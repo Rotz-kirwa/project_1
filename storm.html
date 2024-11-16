@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Military Website</title>
+
+    <!-- Inline CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333333;
+        }
+        header {
+            background-color: #4b5320;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #3e3e3e;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #4b5320;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to the Military Website</h1>
+        <p>Your source for military news and information</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#news">News</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        <section id="news">
+            <h2>Latest News</h2>
+            <p>Stay updated with the latest military news and events.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing accurate and timely information about military operations and personnel.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out!</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Military Website. All rights reserved.</p>
+    </footer>
+
+    <!-- Inline JavaScript -->
+    <script>
+        // Simple script to alert when a section is clicked
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                alert('You clicked on ' + this.textContent);
+            });
+        });
+    </script>
+
+</body>
+</html>
